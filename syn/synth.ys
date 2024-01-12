@@ -1,0 +1,16 @@
+read_liberty -lib /mnt/volume_nyc1_01/skywater-pdk/libraries/sky130_fd_sc_hd/latest/timing/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+read_verilog ../rtl/gen_rnd_key.v
+read_verilog ../rtl/state_operations_combinational.v
+read_verilog ../rtl/datapath.v
+read_verilog ../rtl/multi_run_controller.v
+read_verilog ../rtl/toplevel.v
+
+synth -top toplevel
+flatten
+dfflibmap -liberty /mnt/volume_nyc1_01/skywater-pdk/libraries/sky130_fd_sc_hd/latest/timing/sky130_fd_sc_hd__tt_025C_1v80.lib
+abc -liberty /mnt/volume_nyc1_01/skywater-pdk/libraries/sky130_fd_sc_hd/latest/timing/sky130_fd_sc_hd__tt_025C_1v80.lib
+opt_clean
+
+stat -liberty /mnt/volume_nyc1_01/skywater-pdk/libraries/sky130_fd_sc_hd/latest/timing/sky130_fd_sc_hd__tt_025C_1v80.lib
+write_verilog toplevel_gl.v

@@ -1,0 +1,171 @@
+$date
+	Tue Jan  9 17:24:06 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module multi_run_controller_tb $end
+$var wire 1 ! perform_offload $end
+$var wire 1 " ok2load $end
+$var wire 1 # ok2compute $end
+$var wire 1 $ init $end
+$var wire 1 % done $end
+$var reg 4 & ark2sb4 [3:0] $end
+$var reg 1 ' clk $end
+$var reg 1 ( cmplt_sts $end
+$var reg 1 ) enter_new_pair $end
+$var reg 4 * mc2ark3 [3:0] $end
+$var reg 4 + mc2ark4 [3:0] $end
+$var reg 1 , rst $end
+$var reg 1 - start $end
+$var reg 1 . track_available $end
+$scope module DUT $end
+$var wire 1 ' clk $end
+$var wire 1 ( cmplt_sts $end
+$var wire 4 / cur_ark2sb4_val [3:0] $end
+$var wire 4 0 cur_mc2ark3_val [3:0] $end
+$var wire 4 1 cur_mc2ark4_val [3:0] $end
+$var wire 1 ) enter_new_pair $end
+$var wire 1 , rst $end
+$var wire 1 - start $end
+$var wire 1 . track_avlbl $end
+$var reg 1 # do_compute $end
+$var reg 1 " do_load $end
+$var reg 1 % done $end
+$var reg 1 $ init $end
+$var reg 4 2 next_state [3:0] $end
+$var reg 1 ! offload $end
+$var reg 4 3 state [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx 3
+bx 2
+bx 1
+bx 0
+bx /
+x.
+0-
+0,
+bx +
+bx *
+0)
+x(
+0'
+bx &
+x%
+x$
+x#
+x"
+x!
+$end
+#5
+1'
+#10
+0'
+#15
+1'
+#20
+0'
+#25
+1'
+#27
+1,
+#30
+0%
+0"
+0!
+0#
+0$
+b0 2
+b0 3
+0'
+#31
+0,
+#35
+1'
+#37
+b1 2
+b0 *
+b0 0
+b1111 &
+b1111 /
+1(
+1.
+1-
+#40
+1$
+b10 2
+b1 3
+0'
+#41
+0-
+#45
+1'
+#50
+0$
+b11 2
+b10 3
+0'
+#55
+1'
+#60
+1"
+b100 2
+b11 3
+0'
+#65
+1'
+#70
+0"
+1#
+b100 3
+0'
+#75
+1'
+#80
+0'
+#85
+1'
+#87
+b10 2
+1)
+#90
+0#
+b11 2
+b10 3
+0'
+#91
+0)
+#95
+1'
+#100
+1"
+b100 2
+b11 3
+0'
+#105
+1'
+#110
+0"
+1#
+b100 3
+0'
+#115
+1'
+#120
+0'
+#125
+1'
+#130
+0'
+#135
+1'
+#140
+0'
+#141
